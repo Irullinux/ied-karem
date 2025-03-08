@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(() => {
-        document.getElementById("hero").style.opacity = "0";
-        setTimeout(() => {
-            document.getElementById("hero").style.display = "none";
-            document.getElementById("nextSection").style.opacity = "1";
-        }, 1000);
-    }, 5000); // Ganti tampilan setelah 5 detik
+    setTimeout(function () {
+        document.querySelector(".hero").style.opacity = "0"; // Hilangkan hero pertama
+        setTimeout(function () {
+            document.querySelector(".hero").style.display = "none"; // Sembunyikan sepenuhnya
+            document.querySelector(".next-section").style.opacity = "1"; // Tampilkan hero kedua
+            document.querySelector(".next-section").style.zIndex = "2"; // Pastikan muncul di atas
+        }, 1000); // Delay 1 detik untuk animasi
+    }, 5000); // Auto pindah setelah 5 detik
 });
