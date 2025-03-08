@@ -19,6 +19,12 @@ body, html {
     z-index: 2;
 }
 
+.hero h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+}
 
 
 /* Hero Section */
